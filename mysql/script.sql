@@ -13,7 +13,8 @@ CREATE TABLE user (
     passwordResetExpires DATETIME,
     email VARCHAR(255) UNIQUE NOT NULL,
     sex ENUM('Masculino', 'Feminino', 'Outro', 'Prefiro não responder'),
-    status ENUM('Ativado', 'Desativado', 'Bloqueado') ,
+    status ENUM('Ativado', 'Desativado', 'Bloqueado') NOT NULL DEFAULT 'Ativado' ,
     createdAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updatedAt DATETIME
-) ENGINE=InnoDB
+) ENGINE=InnoDB;
+
