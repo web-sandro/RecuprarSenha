@@ -141,7 +141,10 @@ header {
 }
   
 .password-container input {
-padding-right: 30px; /* Espaço para o ícone */
+    padding-right: 30px; /* Espaço para o ícone */
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .password-icon {

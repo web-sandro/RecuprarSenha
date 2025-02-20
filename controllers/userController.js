@@ -10,26 +10,6 @@ class UserController {
       return res.status(500).render('error.ejs', { error });
     }
   }
-  static async pratica(req, res) {
-    try {
-
-      const user = await UserModel.findById(id);
-
-      res.render('users/show', { user: user });
-    } catch (error) {
-      return res.status(500).render('error.ejs', { error });
-    }
-  }
-  static async pratico(req, res) {
-    try {
-
-      const user = await UserModel.findById(id);
-
-      res.render('users/show', { user: user });
-    } catch (error) {
-      return res.status(500).render('error.ejs', { error });
-    }
-  }
   static async show(req, res) {
     try {
       const id = req.params.id;
@@ -140,7 +120,7 @@ class UserController {
         return res.status(404).render('404.ejs');
       }
 
-      res.redirect('/usuarios');
+      res.redirect('/create');
     } catch (error) {
       return res.status(500).render('error.ejs', { error });
     }

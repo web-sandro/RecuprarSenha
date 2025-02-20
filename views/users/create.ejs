@@ -29,11 +29,15 @@
                             </div>
                             <div>
                                 <label for="birthDate">Data de Nascimento</label>
+                                <br>
                                 <input type="date" id="birthDate" name="birthDate">
                             </div>
                             <div>
                                 <label for="password">Senha</label>
-                                <input type="password" id="password" name="password">
+                                <div class="input-wrapper">
+                                    <input type="password" id="password" name="password">
+                                    <i class="password-icon toggle-password" onclick="togglePasswordVisibility('password')">👁️</i>
+                                </div>
                             </div>
                             <div>
                                 <label for="email">Email</label>
@@ -56,7 +60,7 @@
                 </div>
             </div>
             <div>
-                <script src="/script.js"></script>
+                <script src="/js/script.js"></script>
             </div>
         </main>
         <footer>

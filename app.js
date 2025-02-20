@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 require('dotenv').config();
 app.use(session({
-  secret: process.env.session_secret || 'umSegredoPadrao',
+  secret: process.env.session_secret,
   resave: false,
   saveUninitialized: true,
 }));
